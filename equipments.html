@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Medware - Hospital Care Closer to Home</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <!-- Font Awesome for Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Custom Styles -->
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="equipments.html">Equipment</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#market">For Whom</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#why">Why Medware</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2 ms-3">
+                        <a href="cart.html" class="btn btn-sm btn-primary text-white">
+                            <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+  <!-- Mobile Nav Offcanvas -->
+  <div class="offcanvas offcanvas-end" id="mobileNav">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title">Menu</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="d-flex flex-column gap-3">
+        <button class="btn btn-outline-dark text-start" onclick="window.location.href='index.html'">Home</button>
+        <button class="btn btn-outline-dark text-start" onclick="window.location.href='equipments.html'">Equipment</button>
+        <button class="btn btn-outline-dark text-start" onclick="window.location.href='index.html#why'">Services</button>
+        <button class="btn btn-outline-dark text-start" onclick="window.location.href='index.html#market'">About</button>
+        <button class="btn btn-outline-dark text-start" onclick="window.location.href='contact.html'">Contact</button>
+        <button class="btn btn-outline-dark text-start" onclick="showCart()">Cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index:1100">
+    <div id="addToCartToast" class="toast" role="alert">
+      <div class="toast-body d-flex align-items-center gap-2">
+        <i class="bi bi-check-circle-fill text-success"></i>
+        <span id="toast-message"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- PAGE: HOME (Product Catalog) -->
+  <!-- ============================================================ -->
+  <div id="page-home" class="mw-page">
+    <!-- Hero -->
+    <section class="mw-hero">
+      <div class="container">
+        <h1>Medical Equipment Rental</h1>
+        <p>Browse our comprehensive collection of quality medical equipment available for short and long-term rental</p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <div class="container py-5">
+      <div class="mb-5">
+        <h2 class="h5 fw-semibold mb-3" style="color:var(--mw-foreground)">Categories</h2>
+        <div class="d-flex flex-wrap gap-2">
+          <button class="btn mw-category-btn active" data-category="All">All</button>
+          <button class="btn mw-category-btn" data-category="Mobility">Mobility</button>
+          <button class="btn mw-category-btn" data-category="Beds">Beds</button>
+          <button class="btn mw-category-btn" data-category="Respiratory">Respiratory</button>
+          <button class="btn mw-category-btn" data-category="Comfort">Comfort</button>
+          <button class="btn mw-category-btn" data-category="Privacy">Privacy</button>
+          <button class="btn mw-category-btn" data-category="Monitoring">Monitoring</button>
+        </div>
+      </div>
+
+      <div class="row g-4" id="product-grid">
+        <!-- Product 1 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Standard Wheelchair.jpg" alt="Standard Wheelchair" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Standard Wheelchair</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Comfortable manual wheelchair for daily use</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 10,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('1')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Heavy-Duty Wheelchair .jpg" alt="Heavy-Duty Wheelchair" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Heavy-Duty Wheelchair</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Reinforced wheelchair for bariatric patients</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 15,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('2')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Beds">
+          <div class="card mw-product-card">
+            <img src="images/hospital-bed.jpg" alt="Hospital Bed (Manual)" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Hospital Bed (Manual)</h5>
+              <p class="mw-product-category mb-2">Beds</p>
+              <p class="mw-product-desc">Adjustable manual hospital bed with railings</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 25,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('3')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Beds">
+          <div class="card mw-product-card">
+            <img src="images/Hospital Bed (Semi-Electric) .jpg" alt="Hospital Bed (Semi-Electric)" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Hospital Bed (Semi-Electric)</h5>
+              <p class="mw-product-category mb-2">Beds</p>
+              <p class="mw-product-desc">Semi-electric hospital bed for enhanced comfort</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 35,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('4')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Respiratory">
+          <div class="card mw-product-card">
+            <img src="images/Oxygen Concentrator.jpg" alt="Oxygen Concentrator" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Oxygen Concentrator</h5>
+              <p class="mw-product-category mb-2">Respiratory</p>
+              <p class="mw-product-desc">Portable oxygen concentrator for home use</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 50,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('5')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Respiratory">
+          <div class="card mw-product-card">
+            <img src="images/Suction Machine.jpg" alt="Suction Machine" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Suction Machine</h5>
+              <p class="mw-product-category mb-2">Respiratory</p>
+              <p class="mw-product-desc">Medical suction machine for airway clearance</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 20,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('6')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Walking Frame.jpg" alt="Walking Frame" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Walking Frame</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Sturdy walking aid for elderly and recovery</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 7,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('7')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Crutches.jpg" alt="Crutches" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Crutches</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Adjustable crutches for post-injury support</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 5,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('8')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 9 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Comfort">
+          <div class="card mw-product-card">
+            <img src="images/Commode Chair.jpg" alt="Commode Chair" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Commode Chair</h5>
+              <p class="mw-product-category mb-2">Comfort</p>
+              <p class="mw-product-desc">Portable commode for bedside convenience</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 8,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('9')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 10 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Transfer Chair.jpg" alt="Transfer Chair" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Transfer Chair</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Specialized chair for patient transfers</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 15,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('10')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 11 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Privacy">
+          <div class="card mw-product-card">
+            <img src="images/Ward Screen.jpg" alt="Ward Screen" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Ward Screen</h5>
+              <p class="mw-product-category mb-2">Privacy</p>
+              <p class="mw-product-desc">Portable privacy screen for patient care</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 10,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('11')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 12 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Mobility">
+          <div class="card mw-product-card">
+            <img src="images/Rollator Walker.jpg" alt="Rollator Walker" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Rollator Walker</h5>
+              <p class="mw-product-category mb-2">Mobility</p>
+              <p class="mw-product-desc">Advanced rollator with seat and brakes</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 12,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('12')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Product 13 -->
+        <div class="col-12 col-md-6 col-lg-4" data-category="Monitoring">
+          <div class="card mw-product-card">
+            <img src="images/patient-monitor.jpg" alt="Patient Monitor" class="mw-product-img">
+            <div class="card-body">
+              <h5 class="mw-product-name">Patient Monitor</h5>
+              <p class="mw-product-category mb-2">Monitoring</p>
+              <p class="mw-product-desc">Multi-parameter vital signs monitor for patient care</p>
+              <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                <div class="mw-product-price">UGX 60,000 <small>/day</small></div>
+                <button class="btn mw-btn-add btn-sm" onclick="addToCart('13')"><i class="bi bi-plus me-1"></i>Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Info Banner -->
+    <section class="mw-info-banner mt-5">
+      <div class="container text-center">
+        <h2 class="fw-bold mb-3">Need Help?</h2>
+        <p class="mb-4 fs-5">Contact us for custom quotes, long-term contracts, and installation services</p>
+        <button class="btn btn-light fw-semibold" onclick="window.location.href='contact.html'">Contact Us Today</button>
+      </div>
+    </section>
+  </div>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================================ -->
+  <footer class="mw-footer">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <!-- About -->
+        <div class="col-md-3">
+          <h5>About Medware</h5>
+          <p>Bringing quality medical equipment closer to home. We provide affordable rental services for healthcare equipment across Uganda.</p>
+          <p class="small" style="color:#9ca3af">Making healthcare accessible to everyone.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="equipments.html">Equipment Catalog</a></li>
+            <li class="mb-2"><a href="services.html">Our Services</a></li>
+            <li class="mb-2"><a href="index.html#market">About Us</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html#rental">Equipment Rental</a></li>
+            <li class="mb-2"><a href="services.html#installation">Installation</a></li>
+            <li class="mb-2"><a href="services.html#maintenance">Maintenance</a></li>
+            <li class="mb-2"><a href="services.html#support">Technical Support</a></li>
+            <li class="mb-2"><a href="services.html#consultation">Consultation</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5>Get in Touch</h5>
+          <div class="mb-2"><i class="bi bi-telephone me-2"></i> +256 (0) 750 123 456</div>
+          <div class="mb-2"><i class="bi bi-envelope me-2"></i> info@medware.ug</div>
+          <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kampala, Uganda</div>
+          <p class="small fw-semibold" style="color:var(--mw-accent)">Follow Us</p>
+          <div class="mw-footer-social d-flex gap-2">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mw-footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <p class="mb-0">&copy; 2024 Medware. All rights reserved.</p>
+          <div class="d-flex gap-3">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

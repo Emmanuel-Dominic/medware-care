@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medware - Frequently Asked Questions</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="equipments.html">Equipment</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#market">For Whom</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#why">Why Medware</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2 ms-3">
+                        <a href="cart.html" class="btn btn-sm btn-primary text-white">
+                            <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="mw-hero">
+        <div class="container text-center">
+            <span class="badge mb-3" style="background: #27AE4A; font-size: 0.9rem;">FAQ</span>
+            <h1 class="display-4 fw-700 mb-3">Frequently Asked Questions</h1>
+            <p class="lead" style="color: rgba(255,255,255,0.85); max-width: 600px; margin: 0 auto;">
+                Find answers to common questions about our medical equipment rental services in Uganda.
+            </p>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5" style="background: #f8f9fa;">
+        <div class="container py-4">
+            <div class="row justify-content-center">
+                <div class="col-lg-9">
+
+                    <!-- General Questions -->
+                    <h3 class="fw-700 mb-4" style="color: #1D2C5C;"><i class="fas fa-circle-question me-2" style="color:#27AE4A;"></i> General Questions</h3>
+                    <div class="accordion mb-5" id="faqGeneral">
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#g1">
+                                    What is Medware?
+                                </button>
+                            </h2>
+                            <div id="g1" class="accordion-collapse collapse show" data-bs-parent="#faqGeneral">
+                                <div class="accordion-body text-muted">
+                                    Medware is a medical equipment rental company based in Kampala, Uganda. We provide affordable, high-quality medical equipment on a daily or monthly rental basis to hospitals, clinics, NGOs, and individuals caring for patients at home.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#g2">
+                                    Who can rent equipment from Medware?
+                                </button>
+                            </h2>
+                            <div id="g2" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                                <div class="accordion-body text-muted">
+                                    Anyone can rent from us! We serve hospitals, clinics, rehabilitation centres, NGOs, community health programmes, and individual families caring for patients at home. No medical license is required for most equipment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#g3">
+                                    What areas do you serve?
+                                </button>
+                            </h2>
+                            <div id="g3" class="accordion-collapse collapse" data-bs-parent="#faqGeneral">
+                                <div class="accordion-body text-muted">
+                                    We currently offer same-day delivery within Kampala and the greater Kampala metropolitan area. We also deliver to other parts of Uganda, though delivery times may vary depending on distance.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rental & Pricing -->
+                    <h3 class="fw-700 mb-4" style="color: #1D2C5C;"><i class="fas fa-tags me-2" style="color:#27AE4A;"></i> Rental & Pricing</h3>
+                    <div class="accordion mb-5" id="faqRental">
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#r1">
+                                    How does the rental pricing work?
+                                </button>
+                            </h2>
+                            <div id="r1" class="accordion-collapse collapse" data-bs-parent="#faqRental">
+                                <div class="accordion-body text-muted">
+                                    All equipment is listed with a per-day price. You can choose to rent on a daily or monthly basis. Monthly rentals are calculated at 30 times the daily rate. You select the rental period for each item individually in your cart before checkout.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#r2">
+                                    Is there a minimum rental period?
+                                </button>
+                            </h2>
+                            <div id="r2" class="accordion-collapse collapse" data-bs-parent="#faqRental">
+                                <div class="accordion-body text-muted">
+                                    The minimum rental period is one day. For monthly rentals, the minimum is one month (30 days). You can extend your rental at any time by contacting our team.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#r3">
+                                    What payment methods do you accept?
+                                </button>
+                            </h2>
+                            <div id="r3" class="accordion-collapse collapse" data-bs-parent="#faqRental">
+                                <div class="accordion-body text-muted">
+                                    We accept Mobile Money (MTN and Airtel), bank transfers, and cash on delivery. Payment is required before or upon delivery of equipment.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#r4">
+                                    Is there a security deposit?
+                                </button>
+                            </h2>
+                            <div id="r4" class="accordion-collapse collapse" data-bs-parent="#faqRental">
+                                <div class="accordion-body text-muted">
+                                    Yes, a refundable security deposit may be required depending on the equipment type and rental duration. The deposit is returned in full when the equipment is returned in good condition. Details are provided at checkout.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equipment & Delivery -->
+                    <h3 class="fw-700 mb-4" style="color: #1D2C5C;"><i class="fas fa-truck me-2" style="color:#27AE4A;"></i> Equipment & Delivery</h3>
+                    <div class="accordion mb-5" id="faqDelivery">
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#d1">
+                                    What equipment do you offer?
+                                </button>
+                            </h2>
+                            <div id="d1" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+                                <div class="accordion-body text-muted">
+                                    We offer a wide range of medical equipment including wheelchairs, hospital beds (manual and semi-electric), oxygen concentrators, suction machines, walking frames, crutches, commode chairs, transfer chairs, ward screens, and rollator walkers. Visit our <a href="equipments.html" class="fw-600" style="color:#27AE4A;">Equipment Catalog</a> for the full list.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#d2">
+                                    Is the equipment clean and sanitised?
+                                </button>
+                            </h2>
+                            <div id="d2" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+                                <div class="accordion-body text-muted">
+                                    Absolutely. Every piece of equipment is thoroughly cleaned, sanitised, and inspected before each rental. We follow strict hygiene protocols to ensure patient safety.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#d3">
+                                    How is equipment delivered and set up?
+                                </button>
+                            </h2>
+                            <div id="d3" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+                                <div class="accordion-body text-muted">
+                                    Our trained delivery team brings the equipment to your location and sets it up for you. We also provide a brief demonstration on proper usage and safety. Delivery within Kampala is typically same-day; a flat delivery fee of UGX 50,000 applies.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#d4">
+                                    What happens if equipment breaks down during rental?
+                                </button>
+                            </h2>
+                            <div id="d4" class="accordion-collapse collapse" data-bs-parent="#faqDelivery">
+                                <div class="accordion-body text-muted">
+                                    Contact us immediately on our 24/7 support line. If the fault is due to normal wear and tear, we will repair or replace the equipment at no extra cost. Damage caused by misuse may incur a repair charge. See our <a href="terms.html" class="fw-600" style="color:#27AE4A;">Terms & Conditions</a> for details.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Support & Returns -->
+                    <h3 class="fw-700 mb-4" style="color: #1D2C5C;"><i class="fas fa-headset me-2" style="color:#27AE4A;"></i> Support & Returns</h3>
+                    <div class="accordion mb-5" id="faqSupport">
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#s1">
+                                    How do I return the equipment?
+                                </button>
+                            </h2>
+                            <div id="s1" class="accordion-collapse collapse" data-bs-parent="#faqSupport">
+                                <div class="accordion-body text-muted">
+                                    Simply contact us to schedule a pickup. Our team will collect the equipment from your location at a time convenient for you. Alternatively, you can return it to our office in Kampala.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#s2">
+                                    Can I extend my rental period?
+                                </button>
+                            </h2>
+                            <div id="s2" class="accordion-collapse collapse" data-bs-parent="#faqSupport">
+                                <div class="accordion-body text-muted">
+                                    Yes! Call or WhatsApp us at least 24 hours before your rental expires and we will extend it for you. Additional charges will apply for the extended period at the same rate.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item border-0 shadow-sm mb-3" style="border-radius: 12px; overflow: hidden;">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed fw-600" type="button" data-bs-toggle="collapse" data-bs-target="#s3">
+                                    Do you offer technical support?
+                                </button>
+                            </h2>
+                            <div id="s3" class="accordion-collapse collapse" data-bs-parent="#faqSupport">
+                                <div class="accordion-body text-muted">
+                                    Yes. Our technical support team is available 24/7 for troubleshooting, emergency repairs, and general guidance on equipment use. You can reach us by phone, email, or WhatsApp. Learn more on our <a href="services.html" class="fw-600" style="color:#27AE4A;">Services</a> page.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Still have questions CTA -->
+                    <div class="text-center p-5 rounded-4 shadow-sm" style="background: linear-gradient(135deg, #1D2C5C 0%, #2a3f7d 100%);">
+                        <h4 class="fw-700 text-white mb-3">Still have questions?</h4>
+                        <p class="text-white mb-4" style="opacity: 0.85;">Our team is always ready to help. Reach out and we'll get back to you as soon as possible.</p>
+                        <div class="d-flex flex-wrap gap-3 justify-content-center">
+                            <a href="contact.html" class="btn btn-light fw-600"><i class="fas fa-envelope me-2"></i> Contact Us</a>
+                            <a href="tel:+256750123456" class="btn btn-outline-light fw-600"><i class="fas fa-phone me-2"></i> Call Now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mw-footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <h5>About Medware</h5>
+                    <p>Bringing quality medical equipment closer to home. We provide affordable rental services for healthcare equipment across Uganda.</p>
+                    <p class="small" style="color:#9ca3af">Making healthcare accessible to everyone.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="equipments.html">Equipment Catalog</a></li>
+                        <li class="mb-2"><a href="services.html">Our Services</a></li>
+                        <li class="mb-2"><a href="index.html#market">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#rental">Equipment Rental</a></li>
+                        <li class="mb-2"><a href="services.html#installation">Installation</a></li>
+                        <li class="mb-2"><a href="services.html#maintenance">Maintenance</a></li>
+                        <li class="mb-2"><a href="services.html#support">Technical Support</a></li>
+                        <li class="mb-2"><a href="services.html#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Get in Touch</h5>
+                    <div class="mb-2"><i class="bi bi-telephone me-2"></i> +256 (0) 750 123 456</div>
+                    <div class="mb-2"><i class="bi bi-envelope me-2"></i> info@medware.ug</div>
+                    <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kampala, Uganda</div>
+                    <p class="small fw-semibold" style="color:var(--mw-accent)">Follow Us</p>
+                    <div class="mw-footer-social d-flex gap-2">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mw-footer-bottom">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                    <p class="mb-0">&copy; 2024 Medware. All rights reserved.</p>
+                    <div class="d-flex gap-3">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

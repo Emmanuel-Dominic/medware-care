@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medware - Our Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="equipments.html">Equipment</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#market">For Whom</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html#why">Why Medware</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2 ms-3">
+                        <a href="cart.html" class="btn btn-sm btn-primary text-white">
+                            <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="mw-hero">
+        <div class="container text-center">
+            <span class="badge mb-3" style="background: #27AE4A; font-size: 0.9rem;">What We Offer</span>
+            <h1 class="display-4 fw-700 mb-3">Our Services</h1>
+            <p class="lead" style="color: rgba(255,255,255,0.85); max-width: 650px; margin: 0 auto;">
+                From equipment rental to full technical support, we provide end-to-end healthcare equipment solutions across Uganda.
+            </p>
+        </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section class="py-5" style="background: #f8f9fa;">
+        <div class="container py-3">
+            <div class="row g-4 justify-content-center mb-5">
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <a href="#rental" class="text-decoration-none">
+                        <div class="p-3 rounded-4 shadow-sm bg-white h-100">
+                            <div style="width:60px;height:60px;border-radius:50%;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem;">
+                                <i class="fas fa-wheelchair" style="font-size:1.5rem;color:#27AE4A;"></i>
+                            </div>
+                            <h6 class="fw-700" style="color:#1D2C5C;">Equipment Rental</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <a href="#installation" class="text-decoration-none">
+                        <div class="p-3 rounded-4 shadow-sm bg-white h-100">
+                            <div style="width:60px;height:60px;border-radius:50%;background:rgba(245,127,32,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem;">
+                                <i class="fas fa-tools" style="font-size:1.5rem;color:#F57F20;"></i>
+                            </div>
+                            <h6 class="fw-700" style="color:#1D2C5C;">Installation</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <a href="#maintenance" class="text-decoration-none">
+                        <div class="p-3 rounded-4 shadow-sm bg-white h-100">
+                            <div style="width:60px;height:60px;border-radius:50%;background:rgba(29,44,92,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem;">
+                                <i class="fas fa-wrench" style="font-size:1.5rem;color:#1D2C5C;"></i>
+                            </div>
+                            <h6 class="fw-700" style="color:#1D2C5C;">Maintenance</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <a href="#support" class="text-decoration-none">
+                        <div class="p-3 rounded-4 shadow-sm bg-white h-100">
+                            <div style="width:60px;height:60px;border-radius:50%;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem;">
+                                <i class="fas fa-headset" style="font-size:1.5rem;color:#27AE4A;"></i>
+                            </div>
+                            <h6 class="fw-700" style="color:#1D2C5C;">Technical Support</h6>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg text-center">
+                    <a href="#consultation" class="text-decoration-none">
+                        <div class="p-3 rounded-4 shadow-sm bg-white h-100">
+                            <div style="width:60px;height:60px;border-radius:50%;background:rgba(245,127,32,0.1);display:flex;align-items:center;justify-content:center;margin:0 auto 0.75rem;">
+                                <i class="fas fa-user-md" style="font-size:1.5rem;color:#F57F20;"></i>
+                            </div>
+                            <h6 class="fw-700" style="color:#1D2C5C;">Consultation</h6>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipment Rental -->
+    <section id="rental" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div style="background:rgba(39,174,74,0.08);border-radius:20px;padding:3rem;text-align:center;">
+                        <i class="fas fa-wheelchair" style="font-size:5rem;color:#27AE4A;opacity:0.7;"></i>
+                        <div class="mt-3">
+                            <span class="badge bg-success fs-6">Core Service</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge mb-2" style="background:#27AE4A;">Service 01</span>
+                    <h2 class="fw-700 mb-3" style="color: #1D2C5C;">Equipment Rental</h2>
+                    <p class="text-muted mb-4">
+                        Our core service provides affordable access to high-quality medical equipment without the burden of ownership. Whether you need equipment for a day or several months, we have flexible rental plans to suit your needs.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">Daily & monthly rental options</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">12+ equipment categories</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">Sanitised & inspected equipment</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">Transparent pricing in UGX</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">No long-term commitments</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#27AE4A;"></i>
+                                <span class="text-muted">Flexible rental extensions</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-700 mb-2" style="color:#1D2C5C;">Equipment We Offer:</h6>
+                    <p class="text-muted mb-4">
+                        Wheelchairs (standard & heavy-duty), hospital beds (manual & semi-electric), oxygen concentrators, suction machines, walking frames, crutches, commode chairs, transfer chairs, ward screens, and rollator walkers.
+                    </p>
+                    <a href="equipments.html" class="btn btn-primary fw-600"><i class="fas fa-arrow-right me-2"></i> Browse Equipment</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Installation -->
+    <section id="installation" class="py-5" style="background: #f8f9fa;">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div style="background:rgba(245,127,32,0.08);border-radius:20px;padding:3rem;text-align:center;">
+                        <i class="fas fa-tools" style="font-size:5rem;color:#F57F20;opacity:0.7;"></i>
+                        <div class="mt-3">
+                            <span class="badge fs-6" style="background:#F57F20;">Included Free</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="badge mb-2" style="background:#F57F20;">Service 02</span>
+                    <h2 class="fw-700 mb-3" style="color: #1D2C5C;">Professional Installation</h2>
+                    <p class="text-muted mb-4">
+                        Every equipment rental includes professional delivery and installation at no extra charge. Our trained technicians ensure your equipment is properly set up and ready to use from the moment it arrives.
+                    </p>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(245,127,32,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-truck" style="color:#F57F20;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">Doorstep Delivery</h6>
+                                <p class="text-muted small mb-0">We deliver directly to your home, hospital room, or facility. Same-day delivery available in Kampala for orders placed before noon.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(245,127,32,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-cogs" style="color:#F57F20;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">Expert Assembly & Setup</h6>
+                                <p class="text-muted small mb-0">Our technicians assemble and configure the equipment on-site, ensuring it's safe, stable, and correctly positioned for the patient.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(245,127,32,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-chalkboard-teacher" style="color:#F57F20;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">Usage Demonstration</h6>
+                                <p class="text-muted small mb-0">We walk you through how to use the equipment safely, including adjustments, safety features, and basic troubleshooting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maintenance -->
+    <section id="maintenance" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div style="background:rgba(29,44,92,0.06);border-radius:20px;padding:3rem;text-align:center;">
+                        <i class="fas fa-wrench" style="font-size:5rem;color:#1D2C5C;opacity:0.5;"></i>
+                        <div class="mt-3">
+                            <span class="badge fs-6" style="background:#1D2C5C;">Peace of Mind</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge mb-2" style="background:#1D2C5C;">Service 03</span>
+                    <h2 class="fw-700 mb-3" style="color: #1D2C5C;">Equipment Maintenance</h2>
+                    <p class="text-muted mb-4">
+                        We take care of your rented equipment so you can focus on patient care. Our maintenance programme covers regular servicing, emergency repairs, and replacement when needed.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="card border-0 h-100" style="background:rgba(29,44,92,0.04);border-radius:12px;">
+                                <div class="card-body p-3">
+                                    <i class="fas fa-calendar-check mb-2" style="color:#1D2C5C;font-size:1.3rem;"></i>
+                                    <h6 class="fw-700" style="color:#1D2C5C;">Preventive Maintenance</h6>
+                                    <p class="text-muted small mb-0">Regular inspections and servicing to prevent breakdowns before they happen.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 h-100" style="background:rgba(29,44,92,0.04);border-radius:12px;">
+                                <div class="card-body p-3">
+                                    <i class="fas fa-bolt mb-2" style="color:#1D2C5C;font-size:1.3rem;"></i>
+                                    <h6 class="fw-700" style="color:#1D2C5C;">Emergency Repairs</h6>
+                                    <p class="text-muted small mb-0">Rapid response for equipment breakdowns. We aim to resolve issues within 24 hours.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 h-100" style="background:rgba(29,44,92,0.04);border-radius:12px;">
+                                <div class="card-body p-3">
+                                    <i class="fas fa-sync-alt mb-2" style="color:#1D2C5C;font-size:1.3rem;"></i>
+                                    <h6 class="fw-700" style="color:#1D2C5C;">Equipment Replacement</h6>
+                                    <p class="text-muted small mb-0">If repair isn't possible, we provide a replacement unit to minimise disruption.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="card border-0 h-100" style="background:rgba(29,44,92,0.04);border-radius:12px;">
+                                <div class="card-body p-3">
+                                    <i class="fas fa-broom mb-2" style="color:#1D2C5C;font-size:1.3rem;"></i>
+                                    <h6 class="fw-700" style="color:#1D2C5C;">Sanitisation</h6>
+                                    <p class="text-muted small mb-0">Hospital-grade cleaning and disinfection before and after every rental.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="small text-muted"><i class="fas fa-info-circle me-1" style="color:#27AE4A;"></i> Maintenance for normal wear and tear is included free of charge with all rentals.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technical Support -->
+    <section id="support" class="py-5" style="background: #f8f9fa;">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6 order-lg-2">
+                    <div style="background:rgba(39,174,74,0.08);border-radius:20px;padding:3rem;text-align:center;">
+                        <i class="fas fa-headset" style="font-size:5rem;color:#27AE4A;opacity:0.7;"></i>
+                        <div class="mt-3">
+                            <span class="badge bg-success fs-6">24/7 Available</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1">
+                    <span class="badge mb-2" style="background:#27AE4A;">Service 04</span>
+                    <h2 class="fw-700 mb-3" style="color: #1D2C5C;">Technical Support</h2>
+                    <p class="text-muted mb-4">
+                        Our dedicated technical support team is available around the clock to help you with any equipment-related issues. Whether it's a simple question or an urgent malfunction, we're just a call away.
+                    </p>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-phone-alt" style="color:#27AE4A;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">Phone & WhatsApp Support</h6>
+                                <p class="text-muted small mb-0">Call or message us anytime at <strong>+256 (0) 750 123 456</strong>. Our team responds promptly to all enquiries.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-laptop-medical" style="color:#27AE4A;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">Remote Troubleshooting</h6>
+                                <p class="text-muted small mb-0">Many issues can be resolved over the phone with guided step-by-step instructions from our technicians.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3 mb-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-user-cog" style="color:#27AE4A;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">On-Site Technical Visits</h6>
+                                <p class="text-muted small mb-0">If a problem can't be solved remotely, we dispatch a technician to your location for hands-on support.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-start gap-3">
+                            <div style="min-width:40px;height:40px;border-radius:10px;background:rgba(39,174,74,0.1);display:flex;align-items:center;justify-content:center;">
+                                <i class="fas fa-book-open" style="color:#27AE4A;"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-700 mb-1" style="color:#1D2C5C;">User Training</h6>
+                                <p class="text-muted small mb-0">We provide training for caregivers and healthcare staff on proper equipment usage, safety, and basic troubleshooting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation -->
+    <section id="consultation" class="py-5 bg-white">
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+                <div class="col-lg-6">
+                    <div style="background:rgba(245,127,32,0.08);border-radius:20px;padding:3rem;text-align:center;">
+                        <i class="fas fa-user-md" style="font-size:5rem;color:#F57F20;opacity:0.7;"></i>
+                        <div class="mt-3">
+                            <span class="badge fs-6" style="background:#F57F20;">Free Advice</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <span class="badge mb-2" style="background:#F57F20;">Service 05</span>
+                    <h2 class="fw-700 mb-3" style="color: #1D2C5C;">Expert Consultation</h2>
+                    <p class="text-muted mb-4">
+                        Not sure which equipment best fits your needs? Our consultation service helps you make informed decisions. We work with patients, families, healthcare providers, and institutions to recommend the right equipment.
+                    </p>
+                    <div class="row g-3 mb-4">
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Needs assessment</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Equipment recommendations</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Custom rental plans</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Institutional packages</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Home care planning</span>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="d-flex align-items-start gap-2">
+                                <i class="fas fa-check-circle mt-1" style="color:#F57F20;"></i>
+                                <span class="text-muted">Budget-friendly options</span>
+                            </div>
+                        </div>
+                    </div>
+                    <h6 class="fw-700 mb-2" style="color:#1D2C5C;">Who Benefits:</h6>
+                    <p class="text-muted mb-4">
+                        Families caring for patients at home, hospitals setting up new wards, NGOs running community health programmes, rehabilitation centres, and any organisation seeking to equip healthcare facilities without large capital investments.
+                    </p>
+                    <a href="contact.html" class="btn btn-primary fw-600"><i class="fas fa-comment-dots me-2"></i> Get a Free Consultation</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="py-5" style="background: linear-gradient(135deg, #27AE4A 0%, #1D8C3A 100%);">
+        <div class="container text-center py-4">
+            <h2 class="fw-700 text-white mb-3">Ready to Get Started?</h2>
+            <p class="text-white mb-4" style="opacity: 0.9; max-width: 600px; margin: 0 auto;">
+                Browse our equipment catalog, place your order online, and we'll deliver and set up everything for you.
+            </p>
+            <div class="d-flex flex-wrap gap-3 justify-content-center">
+                <a href="equipments.html" class="btn btn-light btn-lg fw-600"><i class="fas fa-wheelchair me-2"></i> Browse Equipment</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg fw-600"><i class="fas fa-phone me-2"></i> Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mw-footer">
+        <div class="container">
+            <div class="row g-4 mb-4">
+                <div class="col-md-3">
+                    <h5>About Medware</h5>
+                    <p>Bringing quality medical equipment closer to home. We provide affordable rental services for healthcare equipment across Uganda.</p>
+                    <p class="small" style="color:#9ca3af">Making healthcare accessible to everyone.</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="equipments.html">Equipment Catalog</a></li>
+                        <li class="mb-2"><a href="services.html">Our Services</a></li>
+                        <li class="mb-2"><a href="index.html#market">About Us</a></li>
+                        <li class="mb-2"><a href="contact.html">Contact</a></li>
+                        <li class="mb-2"><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Services</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="services.html#rental">Equipment Rental</a></li>
+                        <li class="mb-2"><a href="services.html#installation">Installation</a></li>
+                        <li class="mb-2"><a href="services.html#maintenance">Maintenance</a></li>
+                        <li class="mb-2"><a href="services.html#support">Technical Support</a></li>
+                        <li class="mb-2"><a href="services.html#consultation">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <h5>Get in Touch</h5>
+                    <div class="mb-2"><i class="bi bi-telephone me-2"></i> +256 (0) 750 123 456</div>
+                    <div class="mb-2"><i class="bi bi-envelope me-2"></i> info@medware.ug</div>
+                    <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kampala, Uganda</div>
+                    <p class="small fw-semibold" style="color:var(--mw-accent)">Follow Us</p>
+                    <div class="mw-footer-social d-flex gap-2">
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mw-footer-bottom">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+                    <p class="mb-0">&copy; 2024 Medware. All rights reserved.</p>
+                    <div class="d-flex gap-3">
+                        <a href="privacy.html">Privacy Policy</a>
+                        <a href="terms.html">Terms of Service</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>

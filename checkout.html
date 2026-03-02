@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medware - Checkout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link fw-500" href="cart.html">Back to Cart</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Progress Bar -->
+    <div class="bg-light border-bottom">
+        <div class="container py-4">
+            <div class="row text-center">
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <div style="width: 30px; height: 30px; border-radius: 50%; background: #27AE4A; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">1</div>
+                        <span class="fw-600">Cart</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <div style="width: 30px; height: 30px; border-radius: 50%; background: #1D2C5C; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold;">2</div>
+                        <span class="fw-600">Checkout</span>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="d-flex align-items-center justify-content-center gap-2">
+                        <div style="width: 30px; height: 30px; border-radius: 50%; background: #ddd; color: #666; display: flex; align-items: center; justify-content: center; font-weight: bold;">3</div>
+                        <span class="fw-600 text-muted">Confirmation</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Checkout Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row g-5">
+                <!-- Checkout Form -->
+                <div class="col-lg-8">
+                    <h2 class="fw-700 mb-4" style="color: #1D2C5C;">Checkout</h2>
+
+                    <!-- Contact Information -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-light border-0">
+                            <h6 class="fw-700 mb-0"><i class="fas fa-user me-2" style="color: #27AE4A;"></i>Contact Information</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">Full Name *</label>
+                                    <input type="text" class="form-control form-control-lg" id="fullName" placeholder="Your full name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">Email Address *</label>
+                                    <input type="email" class="form-control form-control-lg" id="email" placeholder="your@email.com" required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-500">Phone Number *</label>
+                                    <input type="tel" class="form-control form-control-lg" id="phone" placeholder="+256 7XX XXX XXX" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Delivery Address -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-light border-0">
+                            <h6 class="fw-700 mb-0"><i class="fas fa-map-marker-alt me-2" style="color: #27AE4A;"></i>Delivery Address</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-12">
+                                    <label class="form-label fw-500">Street Address *</label>
+                                    <input type="text" class="form-control form-control-lg" id="address" placeholder="Street address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">District/Region *</label>
+                                    <input type="text" class="form-control form-control-lg" id="district" placeholder="Kampala, Entebbe, etc." required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">Landmark (Optional)</label>
+                                    <input type="text" class="form-control form-control-lg" id="landmark" placeholder="Nearby landmark">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Rental Details -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-light border-0">
+                            <h6 class="fw-700 mb-0"><i class="fas fa-calendar-alt me-2" style="color: #27AE4A;"></i>Rental Details</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">Start Date *</label>
+                                    <input type="date" class="form-control form-control-lg" id="startDate" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-500">Rental Period *</label>
+                                    <select class="form-select form-select-lg" id="rentalPeriod" required>
+                                        <option value="">Select rental period</option>
+                                        <option value="weekly">Weekly</option>
+                                        <option value="monthly" selected>Monthly</option>
+                                        <option value="quarterly">Quarterly (3 months)</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-500">Special Requests (Optional)</label>
+                                    <textarea class="form-control form-control-lg" id="specialRequests" rows="3" placeholder="Any special requirements or notes?"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Payment Method -->
+                    <div class="card border-0 shadow-sm mb-4">
+                        <div class="card-header bg-light border-0">
+                            <h6 class="fw-700 mb-0"><i class="fas fa-credit-card me-2" style="color: #27AE4A;"></i>Payment Method</h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="mobileMoney" value="mtn" checked>
+                                <label class="form-check-label" for="mobileMoney">
+                                    <strong>Mobile Money (MTN, Airtel)</strong>
+                                    <br><small class="text-muted">We'll send you a prompt to complete payment</small>
+                                </label>
+                            </div>
+                            <div class="form-check mb-3">
+                                <input class="form-check-input" type="radio" name="payment" id="bankTransfer" value="bank">
+                                <label class="form-check-label" for="bankTransfer">
+                                    <strong>Bank Transfer</strong>
+                                    <br><small class="text-muted">Details will be provided after checkout</small>
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="payment" id="onDelivery" value="cash">
+                                <label class="form-check-label" for="onDelivery">
+                                    <strong>Cash on Delivery</strong>
+                                    <br><small class="text-muted">Pay when equipment arrives</small>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary btn-lg w-100 fw-600" id="completeOrderBtn" onclick="completeOrder()">
+                        <i class="fas fa-check-circle me-2"></i> Complete Order
+                    </button>
+                </div>
+
+                <!-- Order Summary -->
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm position-sticky" style="top: 100px;">
+                        <div class="card-header bg-light border-0">
+                            <h6 class="fw-700 mb-0">Order Summary</h6>
+                        </div>
+                        <div class="card-body">
+                            <div id="checkoutItems">
+                                <!-- Items populated by JS -->
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Subtotal:</span>
+                                <span id="checkoutSubtotal" class="fw-600">UGX 0</span>
+                            </div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="text-muted">Delivery Fee:</span>
+                                <span id="checkoutDelivery" class="fw-600">UGX 50,000</span>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex justify-content-between">
+                                <span class="fw-700" style="color: #1D2C5C;">Total:</span>
+                                <span class="fw-700 h5 mb-0" id="checkoutTotal" style="color: #27AE4A;">UGX 0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+  <!-- ============================================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================================ -->
+  <footer class="mw-footer">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <!-- About -->
+        <div class="col-md-3">
+          <h5>About Medware</h5>
+          <p>Bringing quality medical equipment closer to home. We provide affordable rental services for healthcare equipment across Uganda.</p>
+          <p class="small" style="color:#9ca3af">Making healthcare accessible to everyone.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="equipments.html">Equipment Catalog</a></li>
+            <li class="mb-2"><a href="services.html">Our Services</a></li>
+            <li class="mb-2"><a href="index.html#market">About Us</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html#rental">Equipment Rental</a></li>
+            <li class="mb-2"><a href="services.html#installation">Installation</a></li>
+            <li class="mb-2"><a href="services.html#maintenance">Maintenance</a></li>
+            <li class="mb-2"><a href="services.html#support">Technical Support</a></li>
+            <li class="mb-2"><a href="services.html#consultation">Consultation</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5>Get in Touch</h5>
+          <div class="mb-2"><i class="bi bi-telephone me-2"></i> +256 (0) 750 123 456</div>
+          <div class="mb-2"><i class="bi bi-envelope me-2"></i> info@medware.ug</div>
+          <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kampala, Uganda</div>
+          <p class="small fw-semibold" style="color:var(--mw-accent)">Follow Us</p>
+          <div class="mw-footer-social d-flex gap-2">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mw-footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <p class="mb-0">&copy; 2024 Medware. All rights reserved.</p>
+          <div class="d-flex gap-3">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

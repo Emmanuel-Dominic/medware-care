@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medware - Medical Equipment Rental in Uganda | Bringing Hospital Care Closer to Home</title>
+    <meta name="description" content="Affordable medical equipment rental in Uganda. Wheelchairs, hospital beds, oxygen concentrators, and more. Serving hospitals, clinics, NGOs, and home-based patients.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom Styles -->
+    <link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header class="sticky-top navbar-wrapper">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
+                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto gap-2">
+                        <li class="nav-item"><a class="nav-link fw-500" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="equipments.html">Equipment</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="#market">For Whom</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="#why">Why Medware</a></li>
+                        <li class="nav-item"><a class="nav-link fw-500" href="contact.html">Contact</a></li>
+                    </ul>
+                    <div class="d-flex gap-2 ms-3">
+                        <a href="cart.html" class="btn btn-sm btn-primary text-white">
+                            <i class="fas fa-shopping-cart"></i> <span id="cartCount">0</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center g-5 py-5">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-700 mb-4 lh-1" style="color: #1D2C5C;">
+                        Bringing Hospital Care Closer to Home
+                    </h1>
+                    <p class="lead text-muted mb-4">
+                        Affordable, reliable medical equipment rental for hospitals, clinics, NGOs, and home-based patients across Uganda. From wheelchairs to oxygen concentrators, we make quality healthcare equipment accessible.
+                    </p>
+                    
+                    <div class="d-flex flex-wrap gap-3 mb-5">
+                        <a href="equipments.html" class="btn btn-lg btn-primary text-white fw-600">
+                            <i class="fas fa-cube me-2"></i> Request Equipment
+                        </a>
+                        <a href="contact.html" class="btn btn-lg btn-outline-primary fw-600">Get Free Quote</a>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-box">
+                                <h3 class="h4 fw-700" style="color: #27AE4A;">500+</h3>
+                                <small class="text-muted">Happy Clients</small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-box">
+                                <h3 class="h4 fw-700" style="color: #27AE4A;">13</h3>
+                                <small class="text-muted">Equipment Types</small>
+                            </div>
+                        </div>
+                        <div class="col-6 col-sm-4">
+                            <div class="stat-box">
+                                <h3 class="h4 fw-700" style="color: #F57F20;">24/7</h3>
+                                <small class="text-muted">Support</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="hero-image-box" style="position:relative;padding:1.5rem;">
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <img src="images/Standard Wheelchair.jpg" alt="Wheelchair" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/hospital-bed.jpg" alt="Hospital Bed" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/Oxygen Concentrator.jpg" alt="Oxygen Concentrator" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                            </div>
+                            <div class="col-6">
+                                <img src="images/patient-monitor.jpg" alt="Patient Monitor" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                            </div>
+                        </div>
+                        <div class="text-center mt-3">
+                            <span class="fw-700" style="color:#1D2C5C;">Quality Medical Equipment</span><br>
+                            <small class="text-muted">Affordable Rental Services Across Uganda</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+  <!-- ============================================================ -->
+  <!-- PAGE: ABOUT -->
+  <!-- ============================================================ -->
+  <div id="page-about" class="mw-page">
+    <div class="container py-5">
+      <div class="mb-5">
+        <h1 class="display-5 fw-bold mw-section-title">About Medware</h1>
+        <p class="fs-5 mw-text-muted">Bringing Hospital Care Closer to Home</p>
+      </div>
+
+      <div class="row g-5 mb-5">
+        <div class="col-md-6">
+          <div class="mb-4">
+            <h3 class="mw-section-subtitle mb-2">Our Mission</h3>
+            <p class="mw-text-body">At Medware, our mission is to make quality medical equipment accessible and affordable to everyone. We believe that healthcare shouldn't be limited by physical location or financial constraints. By providing reliable equipment rental services, we enable patients to receive the care they need in the comfort of their own homes.</p>
+          </div>
+          <div>
+            <h3 class="mw-section-subtitle mb-2">Our Vision</h3>
+            <p class="mw-text-body">We envision a Uganda where every person has access to quality medical equipment regardless of their economic status. Through innovation and dedication, we strive to transform home healthcare and empower patients, families, and healthcare providers.</p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="mw-info-box mb-4">
+            <h4 class="fw-bold mw-section-title mb-2">Why We Started</h4>
+            <p class="mw-text-body">Medware was founded with a simple observation: patients discharged from hospitals often struggle to access necessary medical equipment due to high costs. We saw an opportunity to bridge this gap through affordable rental services, helping patients continue their recovery at home without financial burden.</p>
+          </div>
+          <div class="mw-accent-box">
+            <h4 class="fw-bold mw-section-title mb-2">Our Commitment</h4>
+            <p class="mw-text-body">We are committed to providing the highest quality equipment, professional service, and exceptional customer support. Every rental comes with our promise of maintenance, reliability, and care.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Core Values -->
+      <div class="mb-5">
+        <h2 class="fw-bold mw-section-title mb-4">Our Core Values</h2>
+        <div class="row g-4">
+          <div class="col-6 col-md-3">
+            <div class="mw-value-card">
+              <div class="mw-value-emoji">❤️</div>
+              <h5 class="fw-bold mw-section-title mb-1">Compassion</h5>
+              <p class="small mw-text-body">We care deeply about patient wellbeing and support</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mw-value-card">
+              <div class="mw-value-emoji">⭐</div>
+              <h5 class="fw-bold mw-section-title mb-1">Quality</h5>
+              <p class="small mw-text-body">Only the best equipment for our valued customers</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mw-value-card">
+              <div class="mw-value-emoji">🤝</div>
+              <h5 class="fw-bold mw-section-title mb-1">Reliability</h5>
+              <p class="small mw-text-body">Consistent service you can count on, always</p>
+            </div>
+          </div>
+          <div class="col-6 col-md-3">
+            <div class="mw-value-card">
+              <div class="mw-value-emoji">💡</div>
+              <h5 class="fw-bold mw-section-title mb-1">Innovation</h5>
+              <p class="small mw-text-body">Continuously improving healthcare accessibility</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Community CTA -->
+      <div class="mw-cta-primary">
+        <h3 class="fw-bold mb-3">Join Our Community</h3>
+        <p class="mb-3">Thousands of Ugandans have trusted Medware for their medical equipment needs. Whether you're a patient, healthcare provider, or institution, we're here to support your healthcare journey.</p>
+        <p>Contact us today to learn how Medware can help make healthcare more accessible and affordable.</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Equipment Catalog -->
+    <section id="equipment" class="py-5" style="background: #f8f9fa;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <span class="badge" style="background: #27AE4A; color: white;" class="mb-3">Our Inventory</span>
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">Medical Equipment Available for Hire</h2>
+                <p class="lead text-muted">Quality equipment for every healthcare need. All items are regularly sanitized and maintained to the highest standards.</p>
+            </div>
+            <div class="row g-4" id="equipmentCards">
+                    <!-- Product 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/Standard Wheelchair.jpg" alt="Standard Wheelchair" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Standard Wheelchair</h5>
+                          <p class="mw-product-category mb-2">Mobility</p>
+                          <p class="mw-product-desc">Comfortable manual wheelchair for daily use</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 10,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/Heavy-Duty Wheelchair .jpg" alt="Heavy-Duty Wheelchair" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Heavy-Duty Wheelchair</h5>
+                          <p class="mw-product-category mb-2">Mobility</p>
+                          <p class="mw-product-desc">Reinforced wheelchair for bariatric patients</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 15,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/hospital-bed.jpg" alt="Hospital Bed (Manual)" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Hospital Bed (Manual)</h5>
+                          <p class="mw-product-category mb-2">Beds</p>
+                          <p class="mw-product-desc">Adjustable manual hospital bed with railings</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 25,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/Hospital Bed (Semi-Electric) .jpg" alt="Hospital Bed (Semi-Electric)" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Hospital Bed (Semi-Electric)</h5>
+                          <p class="mw-product-category mb-2">Beds</p>
+                          <p class="mw-product-desc">Semi-electric hospital bed for enhanced comfort</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 35,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/Oxygen Concentrator.jpg" alt="Oxygen Concentrator" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Oxygen Concentrator</h5>
+                          <p class="mw-product-category mb-2">Respiratory</p>
+                          <p class="mw-product-desc">Portable oxygen concentrator for home use</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 50,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Product 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="card mw-product-card">
+                        <img src="images/Walking Frame.jpg" alt="Walking Frame" class="mw-product-img">
+                        <div class="card-body">
+                          <h5 class="mw-product-name">Walking Frame</h5>
+                          <p class="mw-product-category mb-2">Mobility</p>
+                          <p class="mw-product-desc">Sturdy walking aid for elderly and recovery</p>
+                          <div class="d-flex align-items-center justify-content-between mt-auto pt-3">
+                            <div class="mw-product-price">UGX 7,000 <small>/day</small></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+            </div>
+            <div class="text-center mt-5">
+                <a href="equipments.html" class="btn btn-lg btn-primary fw-600">
+                    <i class="fas fa-th-large me-2"></i> View All Equipment
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Target Market Section -->
+    <section id="market" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">Who We Serve</h2>
+                <p class="lead text-muted">Medware provides solutions for diverse healthcare needs</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #1D2C5C;">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Hospitals & Clinics</h5>
+                        <p class="text-muted small">Equipment solutions for inpatient and outpatient care</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #27AE4A;">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Home-Based Patients</h5>
+                        <p class="text-muted small">Safe, comfortable equipment for home care settings</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #F57F20;">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">NGOs & Humanitarian</h5>
+                        <p class="text-muted small">Flexible contracts for organizations and agencies</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #1D2C5C;">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Elderly Care Homes</h5>
+                        <p class="text-muted small">Specialized equipment for senior care facilities</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #27AE4A;">
+                            <i class="fas fa-person-hiking"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Rehabilitation Centers</h5>
+                        <p class="text-muted small">Equipment for physiotherapy and recovery programs</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="market-card">
+                        <div class="market-icon" style="background: #F57F20;">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Nursing Services</h5>
+                        <p class="text-muted small">Equipment for bedside nursing and care companies</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-5" style="background: linear-gradient(135deg, #1D2C5C 0%, #2a3f7d 100%);">
+        <div class="container py-5">
+            <div class="text-center mb-5 text-white">
+                <h2 class="display-5 fw-700 mb-3">Our Services</h2>
+                <p class="lead" style="color: rgba(255,255,255,0.9);">Beyond equipment rental, we provide comprehensive healthcare support</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h5 class="fw-600">User Training</h5>
+                        <p class="text-muted small">We train clients on proper equipment usage for safety and effectiveness</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h5 class="fw-600">Bio-Medical Services</h5>
+                        <p class="text-muted small">Equipment repair and servicing while in use by clients</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-wrench"></i>
+                        </div>
+                        <h5 class="fw-600">Professional Installation</h5>
+                        <p class="text-muted small">Skilled installation and setup at your location</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h5 class="fw-600">Flexible Contracts</h5>
+                        <p class="text-muted small">Weekly, monthly, and quarterly hire options for your needs</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h5 class="fw-600">Delivery & Pickup</h5>
+                        <p class="text-muted small">Fast delivery and reliable pickup service across Uganda</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="service-card-white">
+                        <div class="service-badge">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <h5 class="fw-600">24/7 Support</h5>
+                        <p class="text-muted small">Round-the-clock assistance for any equipment issues</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5">
+                <a href="services.html" class="btn btn-primary btn-lg fw-600"><i class="fas fa-arrow-right me-2"></i> View More Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Medware Section -->
+    <section id="why" class="py-5" style="background: #f8f9fa;">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">Why Choose Medware?</h2>
+                <p class="lead text-muted">Our commitment to quality and affordability</p>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(39, 174, 74, 0.1); color: #27AE4A;">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Affordable</h5>
+                        <p class="text-muted small">Competitive rates making healthcare accessible to all</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(245, 127, 32, 0.1); color: #F57F20;">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Accessible</h5>
+                        <p class="text-muted small">Available across Uganda with reliable delivery</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(29, 44, 92, 0.1); color: #1D2C5C;">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Reliable</h5>
+                        <p class="text-muted small">Tested equipment and professional service always</p>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-6">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(39, 174, 74, 0.1); color: #27AE4A;">
+                            <i class="fas fa-people-carry"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Caring</h5>
+                        <p class="text-muted small">Dignified healthcare support for our community</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">How It Works</h2>
+                <p class="lead text-muted">Simple steps to get the equipment you need</p>
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">1</div>
+                        <h5 class="fw-600 mt-3">Contact Us</h5>
+                        <p class="text-muted small">Call or visit us to discuss your equipment needs</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">2</div>
+                        <h5 class="fw-600 mt-3">Get a Quote</h5>
+                        <p class="text-muted small">Receive an affordable quote tailored to your requirements</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">3</div>
+                        <h5 class="fw-600 mt-3">Delivery & Setup</h5>
+                        <p class="text-muted small">We deliver and install your equipment professionally</p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-3">
+                    <div class="process-step">
+                        <div class="step-number">4</div>
+                        <h5 class="fw-600 mt-3">Support & Return</h5>
+                        <p class="text-muted small">Enjoy 24/7 support, then easy pickup when done</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- ============================================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================================ -->
+  <footer class="mw-footer">
+    <div class="container">
+      <div class="row g-4 mb-4">
+        <!-- About -->
+        <div class="col-md-3">
+          <h5>About Medware</h5>
+          <p>Bringing quality medical equipment closer to home. We provide affordable rental services for healthcare equipment across Uganda.</p>
+          <p class="small" style="color:#9ca3af">Making healthcare accessible to everyone.</p>
+        </div>
+        <!-- Quick Links -->
+        <div class="col-md-3">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="equipments.html">Equipment Catalog</a></li>
+            <li class="mb-2"><a href="services.html">Our Services</a></li>
+            <li class="mb-2"><a href="index.html#market">About Us</a></li>
+            <li class="mb-2"><a href="contact.html">Contact</a></li>
+            <li class="mb-2"><a href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <!-- Services -->
+        <div class="col-md-3">
+          <h5>Services</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="services.html#rental">Equipment Rental</a></li>
+            <li class="mb-2"><a href="services.html#installation">Installation</a></li>
+            <li class="mb-2"><a href="services.html#maintenance">Maintenance</a></li>
+            <li class="mb-2"><a href="services.html#support">Technical Support</a></li>
+            <li class="mb-2"><a href="services.html#consultation">Consultation</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div class="col-md-3">
+          <h5>Get in Touch</h5>
+          <div class="mb-2"><i class="bi bi-telephone me-2"></i> +256 (0) 750 123 456</div>
+          <div class="mb-2"><i class="bi bi-envelope me-2"></i> info@medware.ug</div>
+          <div class="mb-3"><i class="bi bi-geo-alt me-2"></i> Kampala, Uganda</div>
+          <p class="small fw-semibold" style="color:var(--mw-accent)">Follow Us</p>
+          <div class="mw-footer-social d-flex gap-2">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-twitter-x"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="mw-footer-bottom">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+          <p class="mb-0">&copy; 2024 Medware. All rights reserved.</p>
+          <div class="d-flex gap-3">
+            <a href="privacy.html">Privacy Policy</a>
+            <a href="terms.html">Terms of Service</a>
+            <a href="faq.html">FAQ</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/shop.js"></script>
+</body>
+</html>
