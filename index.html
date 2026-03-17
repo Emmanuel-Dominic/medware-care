@@ -20,10 +20,10 @@
 <body>
     <!-- Header & Navigation -->
     <header class="sticky-top navbar-wrapper">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-light">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background: var(--primary-navy);">
             <div class="container">
                 <a class="navbar-brand d-flex align-items-center gap-2" href="#home">
-                    <img src="images/logo/Medware LOGO FINAL-1.png" alt="Medware Logo" style="height: 50px; width: auto;">
+                    <img src="images/logo/medware logo.png" alt="Medware Logo" style="height: 50px; width: auto;">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                     <span class="navbar-toggler-icon"></span>
@@ -53,60 +53,56 @@
             <div class="row align-items-center g-5 py-5">
                 <div class="col-lg-6">
                     <h1 class="display-4 fw-700 mb-4 lh-1" style="color: #1D2C5C;">
-                        Bringing Hospital Care Closer to Home
+                        Affordable Medical Equipment Rental in Uganda
                     </h1>
                     <p class="lead text-muted mb-4">
-                        Affordable, reliable medical equipment rental for hospitals, clinics, NGOs, and home-based patients across Uganda. From wheelchairs to oxygen concentrators, we make quality healthcare equipment accessible.
+                        Wheelchairs, hospital beds, oxygen concentrators and more delivered to hospitals, clinics, and homes.
                     </p>
-                    
-                    <div class="d-flex flex-wrap gap-3 mb-5">
-                        <a href="equipments.html" class="btn btn-lg btn-primary text-white fw-600">
-                            <i class="fas fa-cube me-2"></i> Request Equipment
-                        </a>
-                        <a href="contact.html" class="btn btn-lg btn-outline-primary fw-600">Get Free Quote</a>
-                    </div>
 
-                    <div class="row g-4">
-                        <div class="col-6 col-sm-4">
-                            <div class="stat-box">
-                                <h3 class="h4 fw-700" style="color: #27AE4A;">500+</h3>
-                                <small class="text-muted">Happy Clients</small>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="stat-box">
-                                <h3 class="h4 fw-700" style="color: #27AE4A;">13</h3>
-                                <small class="text-muted">Equipment Types</small>
-                            </div>
-                        </div>
-                        <div class="col-6 col-sm-4">
-                            <div class="stat-box">
-                                <h3 class="h4 fw-700" style="color: #F57F20;">24/7</h3>
-                                <small class="text-muted">Support</small>
-                            </div>
-                        </div>
+                    <div class="d-flex flex-column gap-3 mb-5" style="max-width: 280px;">
+                        <a href="tel:+256750123456" class="btn btn-lg fw-600 text-white" style="background: #F57F20; border-color: #F57F20;">
+                            <i class="fas fa-phone-alt me-2"></i> Call Now
+                        </a>
+                        <a href="https://wa.me/256750123456" class="btn btn-lg fw-600 text-white" style="background: #F57F20; border-color: #F57F20;">
+                            <i class="fab fa-whatsapp me-2"></i> WhatsApp
+                        </a>
+                        <a href="equipments.html" class="btn btn-lg fw-600 text-white" style="background: #F57F20; border-color: #F57F20;">
+                            <i class="fas fa-clipboard-list me-2"></i> Request Equipment
+                        </a>
                     </div>
                 </div>
 
                 <div class="col-lg-6">
-                    <div class="hero-image-box" style="position:relative;padding:1.5rem;">
-                        <div class="row g-3">
-                            <div class="col-6">
-                                <img src="images/Standard Wheelchair.jpg" alt="Wheelchair" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
+                    <div class="hero-carousel-wrapper" style="position:relative; border-radius:20px; overflow:hidden; background:#fff; box-shadow: 0 8px 30px rgba(0,0,0,0.1);">
+                        <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/hospital-bed.jpg" alt="Hospital Bed" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Oxygen Concentrator.jpg" alt="Oxygen Concentrator" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Standard Wheelchair.jpg" alt="Standard Wheelchair" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/patient-monitor.jpg" alt="Patient Monitor" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Walking Frame.jpg" alt="Walking Frame" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/Suction Machine.jpg" alt="Suction Machine" style="width:100%;height:350px;object-fit:contain;background:#f0f4f8;padding:1rem;">
+                                </div>
                             </div>
-                            <div class="col-6">
-                                <img src="images/hospital-bed.jpg" alt="Hospital Bed" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
-                            </div>
-                            <div class="col-6">
-                                <img src="images/Oxygen Concentrator.jpg" alt="Oxygen Concentrator" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
-                            </div>
-                            <div class="col-6">
-                                <img src="images/patient-monitor.jpg" alt="Patient Monitor" style="width:100%;height:140px;object-fit:contain;background:#fff;border-radius:12px;padding:0.5rem;box-shadow:0 4px 15px rgba(0,0,0,0.08);">
-                            </div>
-                        </div>
-                        <div class="text-center mt-3">
-                            <span class="fw-700" style="color:#1D2C5C;">Quality Medical Equipment</span><br>
-                            <small class="text-muted">Affordable Rental Services Across Uganda</small>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -121,31 +117,13 @@
     <div class="container py-5">
       <div class="mb-5">
         <h1 class="display-5 fw-bold mw-section-title">About Medware</h1>
-        <p class="fs-5 mw-text-muted">Bringing Hospital Care Closer to Home</p>
+        <p class="mw-text-body fs-5">MEDWARE is a healthcare-focused company providing medical equipment hire and related healthcare support services to hospitals, institutions, and individual home-based patients. The brand is intended to be long-term, scalable, and credible, with room to expand beyond equipment hire into other healthcare related services.</p>
       </div>
 
-      <div class="row g-5 mb-5">
-        <div class="col-md-6">
-          <div class="mb-4">
-            <h3 class="mw-section-subtitle mb-2">Our Mission</h3>
-            <p class="mw-text-body">At Medware, our mission is to make quality medical equipment accessible and affordable to everyone. We believe that healthcare shouldn't be limited by physical location or financial constraints. By providing reliable equipment rental services, we enable patients to receive the care they need in the comfort of their own homes.</p>
-          </div>
-          <div>
-            <h3 class="mw-section-subtitle mb-2">Our Vision</h3>
-            <p class="mw-text-body">We envision a Uganda where every person has access to quality medical equipment regardless of their economic status. Through innovation and dedication, we strive to transform home healthcare and empower patients, families, and healthcare providers.</p>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="mw-info-box mb-4">
-            <h4 class="fw-bold mw-section-title mb-2">Why We Started</h4>
-            <p class="mw-text-body">Medware was founded with a simple observation: patients discharged from hospitals often struggle to access necessary medical equipment due to high costs. We saw an opportunity to bridge this gap through affordable rental services, helping patients continue their recovery at home without financial burden.</p>
-          </div>
-          <div class="mw-accent-box">
-            <h4 class="fw-bold mw-section-title mb-2">Our Commitment</h4>
-            <p class="mw-text-body">We are committed to providing the highest quality equipment, professional service, and exceptional customer support. Every rental comes with our promise of maintenance, reliability, and care.</p>
-          </div>
-        </div>
-      </div>
+      <!-- <div class="mb-5">
+          <h3 class="mw-section-subtitle mb-2">Our Vision</h3>
+          <p class="mw-text-body">We envision a Uganda where every person has access to quality medical equipment regardless of their economic status. Through innovation and dedication, we strive to transform home healthcare and empower patients, families, and healthcare providers.</p>
+      </div> -->
 
       <!-- Core Values -->
       <div class="mb-5">
@@ -182,12 +160,6 @@
         </div>
       </div>
 
-      <!-- Community CTA -->
-      <div class="mw-cta-primary">
-        <h3 class="fw-bold mb-3">Join Our Community</h3>
-        <p class="mb-3">Thousands of Ugandans have trusted Medware for their medical equipment needs. Whether you're a patient, healthcare provider, or institution, we're here to support your healthcare journey.</p>
-        <p>Contact us today to learn how Medware can help make healthcare more accessible and affordable.</p>
-      </div>
     </div>
   </div>
 
@@ -195,8 +167,7 @@
     <section id="equipment" class="py-5" style="background: #f8f9fa;">
         <div class="container py-5">
             <div class="text-center mb-5">
-                <span class="badge" style="background: #27AE4A; color: white;" class="mb-3">Our Inventory</span>
-                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">Medical Equipment Available for Hire</h2>
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">We offer</h2>
                 <p class="lead text-muted">Quality equipment for every healthcare need. All items are regularly sanitized and maintained to the highest standards.</p>
             </div>
             <div class="row g-4" id="equipmentCards">
@@ -449,7 +420,7 @@
                 <p class="lead text-muted">Our commitment to quality and affordability</p>
             </div>
 
-            <div class="row g-4">
+            <div class="row g-4 mb-5">
                 <div class="col-md-3 col-sm-6">
                     <div class="why-card text-center">
                         <div class="why-icon" style="background: rgba(39, 174, 74, 0.1); color: #27AE4A;">
@@ -487,6 +458,46 @@
                         </div>
                         <h5 class="fw-600 mt-3">Caring</h5>
                         <p class="text-muted small">Dignified healthcare support for our community</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Detailed Why Points -->
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(39, 174, 74, 0.1); color: #27AE4A;">
+                            <i class="fas fa-tag"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Affordable Rental</h5>
+                        <p class="text-muted small">Access equipment without high purchase costs.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(245, 127, 32, 0.1); color: #F57F20;">
+                            <i class="fas fa-truck"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Fast Delivery</h5>
+                        <p class="text-muted small">Quick delivery across Uganda.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(29, 44, 92, 0.1); color: #1D2C5C;">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Sanitized Equipment</h5>
+                        <p class="text-muted small">Professionally cleaned and maintained.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="why-card text-center">
+                        <div class="why-icon" style="background: rgba(39, 174, 74, 0.1); color: #27AE4A;">
+                            <i class="fas fa-headset"></i>
+                        </div>
+                        <h5 class="fw-600 mt-3">Technical Support</h5>
+                        <p class="text-muted small">24/7 assistance.</p>
                     </div>
                 </div>
             </div>
@@ -536,6 +547,93 @@
             </div>
         </div>
     </section>
+
+    <!-- Testimonials Section -->
+    <!-- <section id="testimonials" class="py-5">
+        <div class="container py-5">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-700 mb-3" style="color: #1D2C5C;">Testimonials</h2>
+                <p class="lead text-muted">What our clients say about Medware</p>
+            </div>
+
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-4 p-md-5">
+                                    <div class="mb-3" style="color: #F57F20; font-size: 2rem;">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="fs-5 mb-4" style="color: #555; line-height: 1.7;">
+                                        "Medware made it possible for my mother to recover at home after surgery. The hospital bed was delivered the same day and the team was so professional. Truly bringing hospital care closer to home."
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3">
+                                        <div class="testimonial-avatar" style="width:50px;height:50px;border-radius:50%;background:#27AE4A;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem;">S</div>
+                                        <div class="text-start">
+                                            <h6 class="fw-600 mb-0" style="color: #1D2C5C;">Sarah N.</h6>
+                                            <small class="text-muted">Home-Based Patient Family</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-4 p-md-5">
+                                    <div class="mb-3" style="color: #F57F20; font-size: 2rem;">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="fs-5 mb-4" style="color: #555; line-height: 1.7;">
+                                        "As a clinic manager, finding affordable equipment was always a challenge. Medware's flexible rental plans have been a game-changer for our facility. Highly recommended!"
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3">
+                                        <div class="testimonial-avatar" style="width:50px;height:50px;border-radius:50%;background:#1D2C5C;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem;">D</div>
+                                        <div class="text-start">
+                                            <h6 class="fw-600 mb-0" style="color: #1D2C5C;">Dr. Mugisha K.</h6>
+                                            <small class="text-muted">Clinic Manager, Kampala</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="testimonial-card text-center p-4 p-md-5">
+                                    <div class="mb-3" style="color: #F57F20; font-size: 2rem;">
+                                        <i class="fas fa-quote-left"></i>
+                                    </div>
+                                    <p class="fs-5 mb-4" style="color: #555; line-height: 1.7;">
+                                        "The wheelchair we rented for my grandfather was clean, well-maintained, and delivered on time. The 24/7 support gave us peace of mind. Thank you Medware!"
+                                    </p>
+                                    <div class="d-flex align-items-center justify-content-center gap-3">
+                                        <div class="testimonial-avatar" style="width:50px;height:50px;border-radius:50%;background:#F57F20;display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:1.2rem;">J</div>
+                                        <div class="text-start">
+                                            <h6 class="fw-600 mb-0" style="color: #1D2C5C;">James O.</h6>
+                                            <small class="text-muted">Family Caregiver</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" style="width:auto;">
+                    <span class="carousel-control-prev-icon" style="background-color:rgba(29,44,92,0.3);border-radius:50%;padding:1rem;" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" style="width:auto;">
+                    <span class="carousel-control-next-icon" style="background-color:rgba(29,44,92,0.3);border-radius:50%;padding:1rem;" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section> -->
+
 
   <!-- ============================================================ -->
   <!-- FOOTER -->

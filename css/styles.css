@@ -29,7 +29,7 @@ body {
     font-family: 'Poppins', 'Plus Jakarta Sans', sans-serif;
     line-height: 1.6;
     color: #333;
-    background: #fff;
+    background: #e8edf4;
 }
 
 /* ============================================
@@ -152,13 +152,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .nav-link {
-    color: var(--primary-navy) !important;
+    color: rgba(255, 255, 255, 0.85) !important;
     font-weight: 500;
     transition: color 0.3s ease;
 }
 
 .nav-link:hover {
-    color: var(--primary-green) !important;
+    color: #fff !important;
 }
 
 .badge {
@@ -884,6 +884,44 @@ footer hr {
 img.mw-product-img[src=""],
 img.mw-product-img:not([src]) {
     background: linear-gradient(135deg, #e8ecf1 0%, #d1d8e0 100%);
+}
+
+/* ============================================
+   TESTIMONIAL CARDS
+*/
+
+.testimonial-card {
+    background: #fff;
+    border-radius: 16px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+#testimonialCarousel .carousel-control-prev-icon,
+#testimonialCarousel .carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ============================================
+   HERO CAROUSEL
+*/
+
+.hero-carousel-wrapper .carousel-control-prev-icon,
+.hero-carousel-wrapper .carousel-control-next-icon {
+    background-color: rgba(29, 44, 92, 0.5);
+    border-radius: 50%;
+    padding: 1.2rem;
+}
+
+/* ============================================
+   HERO CTA BUTTONS
+*/
+
+.hero-section .btn:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(245, 127, 32, 0.3);
 }
 
 img[alt]::after {
